@@ -16,7 +16,32 @@ composer require setono/budbee-bundle
 
 ## Usage
 
-TODO
+```php
+<?php
+
+use Setono\Budbee\Client\ClientInterface;
+
+require_once __DIR__ . '/../vendor/autoload.php';
+
+final class YourService
+{
+    private ClientInterface $client;
+
+    public function __construct(ClientInterface $client)
+    {
+        $this->client = $client;
+    }
+
+    public function __invoke(): void
+    {
+        // do something with the client
+        $boxes = $this->client->boxes()->getAvailableLockers('DK', '1159');
+
+        // ...
+    }
+}
+
+```
 
 [ico-version]: https://poser.pugx.org/setono/budbee-bundle/v/stable
 [ico-license]: https://poser.pugx.org/setono/budbee-bundle/license
