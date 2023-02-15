@@ -1,6 +1,6 @@
 {
     "name": "setono/budbee-bundle",
-    "description": "Use Google Analytics in your Symfony application",
+    "description": "Use Budbee in your Symfony application",
     "license": "MIT",
     "type": "symfony-bundle",
     "authors": [
@@ -19,7 +19,8 @@
         "symfony/dependency-injection": "^5.4 || ^6.0",
         "symfony/http-client": "^5.4 || ^6.0",
         "symfony/http-foundation": "^5.4 || ^6.0",
-        "symfony/http-kernel": "^5.4 || ^6.0"
+        "symfony/http-kernel": "^5.4 || ^6.0",
+        "symfony/monolog-bundle": "^3.8"
     },
     "require-dev": {
         "matthiasnoback/symfony-dependency-injection-test": "^4.3",
