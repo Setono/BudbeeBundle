@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<container xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://symfony.com/schema/dic/services"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+    <services>
+        <service id="Setono\Budbee\Client\ClientInterface"
+                 alias="setono_budbee.client.default"/>
+
+        <service id="setono_budbee.client.default"
+                 class="Setono\Budbee\Client\Client">
+            <argument>%setono_budbee.api_key%</argument>
+            <argument>%setono_budbee.api_secret%</argument>
+            <configurator service="setono_budbee.dependency_injection.client_configurator" method="configure"/>
+            <call method="setLogger">
+                <argument type="service" id="logger"/>
+            </call>
+            <call method="setSandbox">
+                <argument>%kernel.debug%</argument>
+            </call>
+        </service>
+    </services>
+</container>
