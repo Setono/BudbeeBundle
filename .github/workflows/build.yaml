@@ -15,14 +15,14 @@ jobs:
         strategy:
             matrix:
                 php-version:
-                    - "7.4"
+                    - "8.1"
 
                 dependencies:
                     - "highest"
 
         steps:
             -   name: "Checkout"
-                uses: "actions/checkout@v3"
+                uses: "actions/checkout@v4"
 
             -   name: "Setup PHP, with composer and extensions"
                 uses: "shivammathur/setup-php@v2"
@@ -53,25 +53,21 @@ jobs:
         strategy:
             matrix:
                 php-version:
-                    - "7.4"
-                    - "8.0"
                     - "8.1"
                     - "8.2"
                     
                 dependencies:
+                    - "lowest"
                     - "highest"
 
                 symfony:
-                    - "^5.4"
-                    - "^6.0"
-
-                exclude:
-                    -   php-version: "7.4"
-                        symfony: "^6.0"
+                    - "~5.4.0"
+                    - "~6.4.0"
+                    - "~7.0.0"
 
         steps:
             -   name: "Checkout"
-                uses: "actions/checkout@v3"
+                uses: "actions/checkout@v4"
 
             -   name: "Setup PHP, with composer and extensions"
                 uses: "shivammathur/setup-php@v2"
@@ -102,25 +98,21 @@ jobs:
         strategy:
             matrix:
                 php-version:
-                    - "7.4"
-                    - "8.0"
                     - "8.1"
                     - "8.2"
-
+                
                 dependencies:
+                    - "lowest"
                     - "highest"
 
                 symfony:
-                    - "^5.4"
-                    - "^6.0"
-
-                exclude:
-                    -   php-version: "7.4"
-                        symfony: "^6.0"
+                    - "~5.4.0"
+                    - "~6.4.0"
+                    - "~7.0.0"
 
         steps:
             -   name: "Checkout"
-                uses: "actions/checkout@v3"
+                uses: "actions/checkout@v4"
 
             -   name: "Setup PHP, with composer and extensions"
                 uses: "shivammathur/setup-php@v2"
@@ -148,26 +140,21 @@ jobs:
         strategy:
             matrix:
                 php-version:
-                    - "7.4"
-                    - "8.0"
                     - "8.1"
                     - "8.2"
-
+                
                 dependencies:
                     - "lowest"
                     - "highest"
 
                 symfony:
-                    - "^5.4"
-                    - "^6.0"
-
-                exclude:
-                    -   php-version: "7.4"
-                        symfony: "^6.0"
+                    - "~5.4.0"
+                    - "~6.4.0"
+                    - "~7.0.0"
 
         steps:
             -   name: "Checkout"
-                uses: "actions/checkout@v3"
+                uses: "actions/checkout@v4"
 
             -   name: "Setup PHP, with composer and extensions"
                 uses: "shivammathur/setup-php@v2"
@@ -202,7 +189,7 @@ jobs:
 
         steps:
             -   name: "Checkout"
-                uses: "actions/checkout@v3"
+                uses: "actions/checkout@v4"
 
             -   name: "Setup PHP, with composer and extensions"
                 uses: "shivammathur/setup-php@v2"
