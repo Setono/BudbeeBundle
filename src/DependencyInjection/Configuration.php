@@ -14,7 +14,7 @@ final class Configuration implements ConfigurationInterface
         $treeBuilder = new TreeBuilder('setono_budbee');
         $rootNode = $treeBuilder->getRootNode();
 
-        /** @psalm-suppress MixedMethodCall, PossiblyUndefinedMethod, PossiblyNullReference */
+        /** @psalm-suppress MixedMethodCall, PossiblyUndefinedMethod, PossiblyNullReference, UndefinedInterfaceMethod */
         $rootNode
             ->addDefaultsIfNotSet()
             ->children()
