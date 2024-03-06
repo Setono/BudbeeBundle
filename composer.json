@@ -14,12 +14,12 @@
         "cuyz/valinor": "^1.0",
         "psr/cache": "^1.0 || ^2.0 || ^3.0",
         "setono/budbee-php-sdk": "^1.0",
-        "symfony/cache": "^5.4 || ^6.4 || ^7.0",
-        "symfony/config": "^5.4 || ^6.4 || ^7.0",
-        "symfony/dependency-injection": "^5.4 || ^6.4 || ^7.0",
-        "symfony/http-client": "^5.4 || ^6.4 || ^7.0",
-        "symfony/http-foundation": "^5.4 || ^6.4 || ^7.0",
-        "symfony/http-kernel": "^5.4 || ^6.4 || ^7.0",
+        "symfony/cache": "^5.4 || ^6.4",
+        "symfony/config": "^5.4 || ^6.4",
+        "symfony/dependency-injection": "^5.4 || ^6.4",
+        "symfony/http-client": "^5.4 || ^6.4",
+        "symfony/http-foundation": "^5.4 || ^6.4",
+        "symfony/http-kernel": "^5.4 || ^6.4",
         "symfony/monolog-bundle": "^3.8"
     },
     "require-dev": {
